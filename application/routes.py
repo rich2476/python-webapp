@@ -42,10 +42,16 @@ joke_dict = {0: ["Why was Cinderella so bad a football?", "She kept running away
              17: ["What do you call a magician that loses his magic?", "Ian."],
              18: ["How do rabbits travel?", "By hareplanes."],
              19: ["What do you call a sleeping dinosaur?", "A dino-snore."],
-             20: ["Why did the strawberry cry?", "He found himself in a jam."]
+             20: ["Why did the strawberry cry?", "He found himself in a jam."],
+             21: ["What do you call a fake noodle?", "An impasta"]
              }
 
        
 @app.route('/hello')
 def hello():
     return render_template('hello.html', title='Hello')
+
+
+@app.route('/bye')
+def bye():
+    return render_template('bye.html', title='Goodbye')
